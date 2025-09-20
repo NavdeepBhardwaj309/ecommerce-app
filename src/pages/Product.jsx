@@ -8,7 +8,7 @@ const Product=()=>{
   const{addToCart}=useCart();
   const{products}=useProducts();
 //   const navigation=useNavigation();
-console.log("products",products);
+console.log("products from front end",products);
    const product=products.find((p) => p.id === parseInt(id));
    if (!product) return <h2>Product not found</h2>;
     return (
